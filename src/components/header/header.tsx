@@ -12,14 +12,17 @@ const Header = () => {
     {
       id: 1,
       link: 'Home',
+      url: '/',
     },
     {
       id: 2,
       link: 'Articulos',
+      url: 'articulos',
     },
     {
       id: 3,
       link: 'Contacto',
+      url: 'contacto',
     },
   ];
 
@@ -34,7 +37,7 @@ const Header = () => {
       </div>
 
       <ul className="hidden md:flex">
-        {links.map(({ id, link }) => (
+        {links.map(({ id, link, url }) => (
           <li
             key={id}
             className="
@@ -45,7 +48,7 @@ const Header = () => {
             ease-in-out 
             delay-150 hover:underline hover:decoration-dorado hover:underline-offset-8"
           >
-            <Link href={link}>{link}</Link>
+            <Link href={url}>{link}</Link>
           </li>
         ))}
       </ul>
@@ -59,12 +62,12 @@ const Header = () => {
 
       {nav && (
         <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 text-gray-500">
-          {links.map(({ id, link }) => (
+          {links.map(({ id, link, url }) => (
             <li
               key={id}
               className="px-4 cursor-pointer capitalize py-6 text-4xl"
             >
-              <Link onClick={() => setNav(!nav)} href={link}>
+              <Link onClick={() => setNav(!nav)} href={url}>
                 {link}
               </Link>
             </li>
