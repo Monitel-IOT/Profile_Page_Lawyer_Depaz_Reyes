@@ -2,5 +2,5 @@
 export interface ArticleData {
   title: string;
   imageUrl: string;
-  content: string;
+  body: string;
 }

@@ -17,7 +17,7 @@ const ArticleFormModal: React.FC<ArticleFormModalProps> = ({
   const [articleData, setArticleData] = useState<ArticleData>({
     title: '',
     imageUrl: '',
-    content: '',
+    body: '',
   });
 
   const handleInputChange = (
@@ -70,13 +70,13 @@ const ArticleFormModal: React.FC<ArticleFormModalProps> = ({
             />
           </div>
           <div className="mb-4">
-            <label htmlFor="content" className="block mb-1">
+            <label htmlFor="body" className="block mb-1">
               Contenido:
             </label>
             <textarea
-              id="content"
-              name="content"
-              value={articleData.content}
+              id="body"
+              name="body"
+              value={articleData.body}
               onChange={handleInputChange}
               className="border border-gray-300 rounded px-3 py-2 w-full h-32 resize-none"
             />
