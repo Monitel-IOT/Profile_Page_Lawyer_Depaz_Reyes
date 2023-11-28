@@ -11,10 +11,10 @@ datasource db {
 }
 
 model Article {
-  id       String    @id @default(auto()) @map("_id") @db.ObjectId
+  id       String @id @default(auto()) @map("_id") @db.ObjectId
   title    String
   body     String
-	imageUrl String
+  imageUrl String
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
