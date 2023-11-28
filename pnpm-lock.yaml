@@ -2155,6 +2155,7 @@ packages:
     requiresBuild: true
     dependencies:
       '@prisma/engines': 5.6.0
+    dev: false
 <<<<<<< HEAD
 =======
     dev: false
