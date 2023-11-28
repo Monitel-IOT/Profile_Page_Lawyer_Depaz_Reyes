@@ -46,9 +46,6 @@ devDependencies:
   postcss:
     specifier: ^8
     version: 8.0.0
-  prisma:
-    specifier: ^5.6.0
-    version: 5.6.0
   tailwindcss:
     specifier: ^3.3.0
     version: 3.3.0(postcss@8.0.0)(ts-node@10.9.1)
@@ -282,6 +279,7 @@ packages:
   /@prisma/engines@5.6.0:
     resolution: {integrity: sha512-Mt2q+GNJpU2vFn6kif24oRSBQv1KOkYaterQsi0k2/lA+dLvhRX6Lm26gon6PYHwUM8/h8KRgXIUMU0PCLB6bw==}
     requiresBuild: true
+    dev: false
 
   /@rushstack/eslint-patch@1.5.1:
     resolution: {integrity: sha512-6i/8UoL0P5y4leBIGzvkZdS85RDMG9y1ihZzmTZQ5LdHUYmZ7pKFoj8X0236s3lusPs1Fa5HTQUpwI+UfTcmeA==}
@@ -2146,6 +2144,10 @@ packages:
     requiresBuild: true
     dependencies:
       '@prisma/engines': 5.6.0
+<<<<<<< HEAD
+=======
+    dev: false
+>>>>>>> 5ba02dc (add: prisma model)
 
   /progress@2.0.3:
     resolution: {integrity: sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==}
