@@ -17,12 +17,12 @@ const Header = () => {
     {
       id: 2,
       link: 'Articulos',
-      url: 'articulos',
+      url: '/articulos',
     },
     {
       id: 3,
       link: 'Contacto',
-      url: 'contacto',
+      url: '/contacto',
     },
   ];
 
