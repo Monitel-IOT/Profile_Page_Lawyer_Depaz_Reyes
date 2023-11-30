@@ -3,6 +3,7 @@
 import React from 'react';
 // Importa otros componentes si los necesitas, como Layout, Header, Footer, etc.
 import Article from '../../../components/article/article';
+import Title from '@/components/UI/atoms/Title/Title';
 
 
 const mockArticles = [

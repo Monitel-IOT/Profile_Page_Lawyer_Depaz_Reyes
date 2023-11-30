@@ -5,7 +5,7 @@ import Text from '@/components/UI/atoms/Text/Text';
 
 function Page() {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col h-[calc(100vh_-_104px)]">
       <section className="flex justify-center items-center h-[285.5px] bg-black">
         <Title className="text-white font-bold" variant="h2">
           Contactame
