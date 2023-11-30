@@ -1,7 +1,8 @@
 "use client"
 
-import React, { useEffect, useState } from 'react';
-import ArticleItem from '../../components/articleItem/ArticleItem';
+import React from 'react';
+// Importa otros componentes si los necesitas, como Layout, Header, Footer, etc.
+import Article from '../../../components/article/article';
 
 
 const mockArticles = [
@@ -32,31 +33,28 @@ const mockArticles = [
   // ...más artículos
 ];
 
+const ArticlePage = ({ params }: { params: { id: string } }) => {
+  
+  const { id } = params;
 
-const ArticleList = () => {
-  //const [articles, setArticles] = useState<Article[]>([]);
+  // Asegúrate de que id es un string antes de comparar
+  const articleId = Array.isArray(id) ? id[0] : id;
 
-  //useEffect(() => {
-  //  // Aquí haces tu llamada a la API o fetch de tus datos
-  //  fetch('/api/articles')
-  //    .then(response => response.json())
-  //    .then(data => setArticles(data))
-  //    .catch(error => console.error('Error fetching articles:', error));
-  //}, []);
+  // Encuentra el artículo por ID
+  const article = mockArticles.find((article) => article.id === articleId);
 
-  const articles = mockArticles;
+  // Asegúrate de manejar el caso de que el artículo no se haya encontrado
+  if (!article) {
+    return <p>Artículo no encontrado</p>;
+  }
 
   return (
     <div>
-      {/* ... */}
-      <main className="max-w-5xl mx-auto p-10 max-w-2xl mx-auto p-12">
-        {articles.map(article => (
-          <ArticleItem key={article.id} {...article} />
-        ))}
-      </main>
-      {/* ... */}
+      {/* Puedes envolver tu página con un Layout si tienes uno */}
+      <Article key={article.id} {...article} />
+      {/* Footer, si tienes uno */}
     </div>
   );
 };
 
-export default ArticleList;
+export default ArticlePage;

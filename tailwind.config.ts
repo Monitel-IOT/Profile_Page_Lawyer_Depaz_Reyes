@@ -9,9 +9,13 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
+				'hero-contact': "url('/images/contact/builds.png')",
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      },
+      colors: {
+        'dorado': '#D5AA6D',
       },
     },
   },

@@ -1,7 +1,7 @@
+import Header from '@/components/header/header';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-
-const inter = Inter({ subsets: ['latin'] });
+import './globals.css';
+import Footer from '@/components/footer/footer';
 
 export const metadata: Metadata = {
   title: 'Depaz Reyes',
@@ -15,7 +15,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body>
+        <main className="grid m-auto min-h-screen grid-rows-[60px,1fr,60px]">
+          <Header />
+          {children}
+          <Footer />
+        </main>
+      </body>
     </html>
   );
 }
