@@ -1,6 +1,8 @@
-// ArticleFormModal.tsx (o en un archivo separado, si prefieres)
 export interface ArticleData {
-  title: string;
-  imageUrl: string;
-  body: string;
+  id?:string;
+  title?: string;
+  imageUrl?: string;
+  body?: string;
+  createdAt?: string;
+  updatedAt?: string;
 }

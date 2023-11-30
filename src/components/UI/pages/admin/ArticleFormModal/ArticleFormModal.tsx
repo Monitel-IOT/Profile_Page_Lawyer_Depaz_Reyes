@@ -1,35 +1,43 @@
 'use client';
 import { ArticleData } from '@/interface/ArticleData';
-import React, { useState } from 'react';
+import React, { MouseEventHandler } from 'react';
 import Modal from 'react-modal';
 
 interface ArticleFormModalProps {
   isOpen: boolean;
   onClose: () => void;
-  onSubmit: (articleData: ArticleData) => void;
+  isUpdate: boolean;
+  onCreate: (articleData: ArticleData) => void;
+  onUpdate: (articleData: ArticleData) => void;
+  article: ArticleData | undefined;
+  setArticle: (article: ArticleData) => void;
+  setIsModalOpen: (isOpen: boolean) => void;
 }
 
 const ArticleFormModal: React.FC<ArticleFormModalProps> = ({
   isOpen,
   onClose,
-  onSubmit,
+  isUpdate,
+  onCreate,
+  onUpdate,
+  article,
+  setArticle,
+  setIsModalOpen,
 }) => {
-  const [articleData, setArticleData] = useState<ArticleData>({
-    title: '',
-    imageUrl: '',
-    body: '',
-  });
-
   const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     const { name, value } = e.target;
-    setArticleData({ ...articleData, [name]: value });
+    setArticle({ ...article, [name]: value });
   };
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    onSubmit(articleData);
+    if (isUpdate) {
+      onUpdate(article!);
+    } else {
+      onCreate(article!);
+    }
     onClose();
   };
 
@@ -41,7 +49,12 @@ const ArticleFormModal: React.FC<ArticleFormModalProps> = ({
       className="modal"
     >
       <div className="bg-white p-6 rounded-lg shadow-md w-96 mx-auto mt-10">
-        <h2 className="text-xl font-bold mb-4">Crear un Articulo</h2>
+        <div className="flex justify-between">
+          <h2 className="text-xl font-bold mb-4">Crear un Articulo</h2>
+          <button className="text-2xl" onClick={() => setIsModalOpen(false)}>
+            x
+          </button>
+        </div>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
             <label htmlFor="title" className="block mb-1">
@@ -51,7 +64,7 @@ const ArticleFormModal: React.FC<ArticleFormModalProps> = ({
               type="text"
               id="title"
               name="title"
-              value={articleData.title}
+              value={article?.title}
               onChange={handleInputChange}
               className="border border-gray-300 rounded px-3 py-2 w-full"
             />
@@ -64,7 +77,7 @@ const ArticleFormModal: React.FC<ArticleFormModalProps> = ({
               type="text"
               id="imageUrl"
               name="imageUrl"
-              value={articleData.imageUrl}
+              value={article?.imageUrl}
               onChange={handleInputChange}
               className="border border-gray-300 rounded px-3 py-2 w-full"
             />
@@ -76,16 +89,16 @@ const ArticleFormModal: React.FC<ArticleFormModalProps> = ({
             <textarea
               id="body"
               name="body"
-              value={articleData.body}
+              value={article?.body}
               onChange={handleInputChange}
               className="border border-gray-300 rounded px-3 py-2 w-full h-32 resize-none"
             />
           </div>
           <button
             type="submit"
-            className="text-black p-[20px] mt-[30px] rounded-full bg-gradient-to-r from-dorado to-brown-100 shadow-xl"
+            className="text-white font-bold p-[20px] mt-[30px] rounded-full bg-gradient-to-r from-dorado to-yellow-950 shadow-xl"
           >
-            Crear
+            {isUpdate ? 'Actualizar' : 'Crear'}
           </button>
         </form>
       </div>
