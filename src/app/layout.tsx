@@ -16,11 +16,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <main className="grid m-auto min-h-screen grid-rows-[60px,1fr,60px]">
-          <Header />
-          {children}
-          <Footer />
-        </main>
+        <Header />
+        <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );
