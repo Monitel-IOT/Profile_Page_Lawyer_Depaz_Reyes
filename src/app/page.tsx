@@ -10,7 +10,7 @@ export default function Home() {
           <Title className="font-bold text-[50px]">JHON HENRY</Title>
           <Title className="font-bold text-[50px]">DEPAZ REYES</Title>
           <Link href={'/contacto'}>
-            <button className="text-white p-[20px] mt-[30px] rounded-full bg-gradient-to-r from-dorado to-brown-100 shadow-xl">
+            <button className="text-white p-[20px] mt-[30px] rounded-full bg-gradient-to-r from-dorado to-yellow-950 shadow-xl">
               Contactanos hoy
             </button>
           </Link>
