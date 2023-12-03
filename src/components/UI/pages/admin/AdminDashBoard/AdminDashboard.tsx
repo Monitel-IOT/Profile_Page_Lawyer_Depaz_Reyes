@@ -125,7 +125,6 @@ const AdminDashboard: React.FC = () => {
         const response = await fetch('/api/articles');
         const data = await response.json();
         setArticles(data.data);
-        console.log('Articles fetched:', data.data);
       } catch (error) {
         console.error('Error fetching articles:', error);
       } finally {
