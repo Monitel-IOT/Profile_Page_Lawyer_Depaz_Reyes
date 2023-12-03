@@ -16,8 +16,6 @@ const AccessForm: React.FC<AccessFormProps> = ({ allowAccess }) => {
   const handleAccess = () => {
     const accessPassword: string | undefined =
       process.env.NEXT_PUBLIC_ACCESS_PASSWORD;
-    console.log('access ', accessPassword);
-    console.log('pass ', password);
     if (password === accessPassword) {
       allowAccess(true);
     } else {
