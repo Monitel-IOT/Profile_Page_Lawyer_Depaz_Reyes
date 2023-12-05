@@ -22,7 +22,7 @@ export default function RootLayout({
           <div className="fixed top-[60%] right-0 z-[100] flex flex-col items-end">
             <IconButton
               className="flex bg-whatsapp w-[45px] h-[45px] rounded-tl-xl hover:shadow-3xl no-underline hover:w-[69px] bg-no-repeat hover:rounded-bl-xl bg-[#1BD741] transition-all ease-in-out duration-300"
-              href="https://api.whatsapp.com/send?phone=51913812243&text=Hola,%20es%20Jhon%20Henry%20Depaz%20Abogados?"
+              href="https://api.whatsapp.com/send?phone=51913812243&text=Hola,%20es%20Jhon%20Henry%20Depaz%20Abogado?"
               target="_blank"
             />
             <IconButton
@@ -31,7 +31,7 @@ export default function RootLayout({
             />
             <IconButton
               className="flex bg-facebook w-[45px] h-[45px] rounded-bl-xl bg-[#0084FF] hover:shadow-3xl no-underline hover:w-[69px] bg-no-repeat hover:rounded-tl-xl transition-all ease-in-out duration-300"
-              href="https://m.me/Ancashabogados"
+              href="https://m.me/jhonhenry.depazreyes"
               target="_blank"
             />
           </div>
