@@ -13,29 +13,27 @@ function Page() {
       </section>
       <section className=" bg-hero-contact min-h-[562px]">
         <div className="flex justify-center relative bg-[rgba(0,0,0,0.85)] h-[562px]">
-          <div className="shadow-[0px_1px_18px_0px_rgba(0,0,0,0.15)] h-auto  max-w-[1170px] bg-white mx-[30px] absolute top-[-82px] p-[30px] md:p-[70px]">
+          <div className="shadow-[0px_1px_18px_0px_rgba(0,0,0,0.15)] h-auto  max-w-[1170px] bg-white mx-[30px] absolute top-[12px] p-[30px] md:p-[70px]">
             <Title className="mb-[16px] font-bold" variant="h2">
               Póngase en contacto o programe una cita
             </Title>
             <Text className="mb-[16px] max-w-[700px]" variant="xs">
-              Por favor contáctenos usando la información a continuación. Para
-              obtener información adicional visite la página correspondiente en
-              nuestro sitio.
+              Por favor contáctenos usando la información a continuación.
             </Text>
             <Text className="text-[#666]" variant="sm">
-              131 Dartmouth Street
+              Dirección: Pasaje Daniel Coral Vega
             </Text>
             <Text className="text-[#666]" variant="sm">
-              Boston, Massachusetts 012
+              N° 542 2do piso Oficina 200
             </Text>
             <Text className="text-[#666]" variant="sm">
-              United States
+              Huaraz-Perú
             </Text>
             <Text className="text-[#666]" variant="sm">
-              +1 617 572 2000
+              Teléfono: +51 913 812 243
             </Text>
             <Text className="text-[#666]" variant="sm">
-              support@lawsight.com
+              Correo Electrónico: johndepazr@gmail.com
             </Text>
           </div>
         </div>

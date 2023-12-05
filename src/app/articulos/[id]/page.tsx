@@ -50,7 +50,7 @@ const ArticlePage = ({ params }: { params: { id: string } }) => {
   }
 
   return (
-    <div>
+    <div className='bg-black'>
       {/* Puedes envolver tu página con un Layout si tienes uno */}
       <Article key={article.id} {...article} />
       {/* Footer, si tienes uno */}
