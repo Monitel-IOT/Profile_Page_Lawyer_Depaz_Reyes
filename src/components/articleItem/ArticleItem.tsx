@@ -4,6 +4,21 @@ import Title from '@/components/UI/atoms/Title/Title';
 import Text from '@/components/UI/atoms/Text/Text';
 import { ArticleData } from '@/interface/ArticleData';
 
+const formatDate = (dateString : string) => {
+  if (!dateString) {
+    return 'Fecha no disponible';
+  }
+
+  const date = new Date(dateString);
+  return date.toLocaleDateString("es-ES", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+    hour: '2-digit',
+    minute: '2-digit'
+  });
+};
+
 const ArticleItem = ({ id, title, imageUrl, body, createdAt }: ArticleData) => {
   const maxCharacters = 200;
 
@@ -11,6 +26,9 @@ const ArticleItem = ({ id, title, imageUrl, body, createdAt }: ArticleData) => {
   const truncatedContent = body && body.length > maxCharacters
     ? body.substring(0, maxCharacters) + "..."
     : body || ''; // Usa una cadena vacía si 'body' es undefined
+
+  const formattedDate = createdAt ? formatDate(createdAt) : 'Fecha no disponible';
+
 
   return (
     <div className="flex flex-col md:flex-row border rounded-lg overflow-hidden shadow-lg mb-5 bg-white">
@@ -22,7 +40,7 @@ const ArticleItem = ({ id, title, imageUrl, body, createdAt }: ArticleData) => {
           <Title className="text-lg md:text-[25px] font-bold">
             {title}
           </Title>
-          <p className="text-sm text-gray-600 mb-2">{createdAt}</p>
+          <p className="text-sm text-gray-600 mb-2">{formattedDate}</p>
           <Text className="mb-[16px] max-w-[700px]" variant="sm">
             {truncatedContent}
           </Text>
