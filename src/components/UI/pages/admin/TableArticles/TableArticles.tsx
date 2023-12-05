@@ -12,6 +12,7 @@ const TableArticles = ({
   handleUpdateClick,
   handleDeleteClick,
 }: Props) => {
+
   return (
     <div className="flex flex-col text-white m-10">
       <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
@@ -46,7 +47,7 @@ const TableArticles = ({
                     <td className="whitespace-nowrap px-6 py-4">
                       {article.title}
                     </td>
-                    <td className="whitespace-nowrap px-6 py-4">
+                    <td className="whitespace-nowrap px-6 py-4 truncate max-w-md">
                       {article.body}
                     </td>
                     <td>

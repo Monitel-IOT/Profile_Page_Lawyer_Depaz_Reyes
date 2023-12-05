@@ -27,7 +27,7 @@ const Article = ({ title, imageUrl, body, createdAt }: ArticleData) => {
           <Title className="text-[19px] md:text-[36px] font-bold">{title}</Title>
           <p className="text-sm text-gray-600">{formattedDate}</p>
           <img src={imageUrl} alt={title} className="w-full h-auto my-4 rounded" />
-          <Text className="mb-[16px] max-w-[700px]" variant="sm">
+          <Text className="mb-[16px] max-w-[700px] whitespace-pre-line" variant="sm">
             {body}
           </Text>
       </article>

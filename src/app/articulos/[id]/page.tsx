@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import Article from '../../../components/article/article';
 import { ArticleData } from '@/interface/ArticleData';
+import Spinner from '@/components/Spinner/Spinner';
 
 const ArticlePage = ({ params }: { params: { id: string } }) => { // Asume que 'id' se pasa como prop
 
@@ -33,7 +34,7 @@ const ArticlePage = ({ params }: { params: { id: string } }) => { // Asume que '
   }, [id]); // Dependencia de id para que el efecto se ejecute cuando el id cambie
 
   if (isLoading) {
-    return <p>Cargando artículo...</p>;
+    return <Spinner />;
   }
 
   if (!article) {
