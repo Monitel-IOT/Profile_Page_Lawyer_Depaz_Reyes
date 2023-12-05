@@ -1,6 +1,32 @@
 import prisma from '@/lib/prisma';
 import { NextRequest, NextResponse } from 'next/server';
 
+export const GET = async (
+  request: NextRequest,
+  { params }: { params: { id: string } }
+) => {
+	try {
+		const { id } = params;
+		const article = await prisma.article.findUnique({
+			where: { id },
+		});
+		return NextResponse.json(
+			{
+				code: 200,
+				message: null,
+				error: false,
+				data: article,
+			},
+			{ status: 200 }
+		);
+	} catch (error) {
+    return NextResponse.json(
+      { code: 400, message: null, error: true },
+      { status: 400 }
+    );
+	}
+};
+
 export const PUT = async (
   request: NextRequest,
   { params }: { params: { id: string } }
