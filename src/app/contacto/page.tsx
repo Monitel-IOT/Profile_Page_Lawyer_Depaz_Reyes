@@ -1,10 +1,15 @@
 import Title from '@/components/UI/atoms/Title/Title';
 import React from 'react';
 import Text from '@/components/UI/atoms/Text/Text';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Depaz Reyes | Contacto',
+};
 
 function Page() {
   return (
-    <div className="flex flex-col md:h-[calc(100vh_-_104px)]">
+    <article className="flex flex-col md:h-[calc(100vh_-_104px)]">
       <section className="flex justify-center items-center h-[285.5px] bg-black">
         <Title className="text-white font-bold" variant="h2">
           Contactame
@@ -16,7 +21,10 @@ function Page() {
             <Title className="mb-[16px] font-bold" variant="h2">
               Póngase en contacto o programe una cita
             </Title>
-            <Text className="hidden md:flex md:mb-[16px] md:max-w-[700px]" variant="xs">
+            <Text
+              className="hidden md:flex md:mb-[16px] md:max-w-[700px]"
+              variant="xs"
+            >
               Por favor contáctenos usando la información a continuación. Para
               obtener información adicional visite la página correspondiente en
               nuestro sitio.
@@ -54,7 +62,7 @@ function Page() {
           </div>
         </div>
       </section>
-    </div>
+    </article>
   );
 }
 
