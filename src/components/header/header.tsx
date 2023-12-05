@@ -27,7 +27,7 @@ const Header = () => {
   ];
 
   return (
-    <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-black nav">
+    <nav className="flex justify-between items-center w-full h-20 px-4 text-white bg-black nav">
       <div>
         <h1 className="text-5xl font-signature ml-2">
           <Link className="" href="/">
@@ -74,7 +74,7 @@ const Header = () => {
           ))}
         </ul>
       )}
-    </div>
+    </nav>
   );
 };
 

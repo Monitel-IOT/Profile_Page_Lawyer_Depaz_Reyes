@@ -1,18 +1,16 @@
 import Title from '@/components/UI/atoms/Title/Title';
+import { Metadata } from 'next';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: 'Depaz Reyes | Home',
+};
 
 export default function Home() {
   return (
-    <div className="bg-black pt-16">
-      {' '}
-      {/* Añade padding-top para separar del navbar */}
-      {/* Contenedor principal para todo el contenido */}
+    <article className="bg-black pt-16">
       <div className="flex flex-col items-center justify-start h-screen">
-        {/* Contenedor para el contenido central */}
         <div className="flex flex-col md:flex-row items-center justify-center w-full md:space-x-10 md:pt-8">
-          {' '}
-          {/* Añade espacio en el eje x para desktop */}
-          {/* Contenido del lado izquierdo */}
           <div className="text-white flex flex-col items-center md:items-end md:flex-1 mb-8 md:mb-0">
             <Title className="font-bold text-[50px] leading-none text-right">
               JHON HENRY
@@ -26,10 +24,8 @@ export default function Home() {
               </button>
             </Link>
           </div>
-          {/* Contenido del lado derecho */}
           <div className="text-white flex flex-col items-center md:items-start md:flex-1 mt-8 md:mt-0 px-4 md:px-0">
             {' '}
-            {/* Añade padding para móviles */}
             <p className="font-bold text-lg">ABOGADO</p>
             <p className="text-lg">R.C.A..A. 3946</p>
             <p className="text-lg">johndepazr@gmail.com</p>
@@ -39,7 +35,6 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Mapa de Google Maps */}
         <div
           className="w-full md:absolute md:bottom-0 md:left-0 py-10 md:py-0"
           style={{ height: '350px', marginTop: '-2rem' }}
@@ -54,6 +49,6 @@ export default function Home() {
           ></iframe>
         </div>
       </div>
-    </div>
+    </article>
   );
 }
