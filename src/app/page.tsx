@@ -31,21 +31,23 @@ export default function Home() {
             {' '}
             {/* Añade padding para móviles */}
             <p className="font-bold text-lg">ABOGADO</p>
-            <p className="text-lg">R.C.A.A. 3946</p>
+            <p className="text-lg">R.C.A..A. 3946</p>
             <p className="text-lg">johndepazr@gmail.com</p>
             <p className="text-lg">913 812 243</p>
+            <p className="text-lg">Dirección: Pasaje Daniel Coral Vega</p>
+            <p className="text-lg">N° 542 2do piso Oficina 200</p>
           </div>
         </div>
 
         {/* Mapa de Google Maps */}
         <div
-          className="w-full absolute bottom-0 left-0"
+          className="w-full md:absolute md:bottom-0 md:left-0 py-10 md:py-0"
           style={{ height: '350px', marginTop: '-2rem' }}
         >
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2096.9010047099637!2d-71.97579024047458!3d-13.523373584943919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x916dd5e0715c165f%3A0xc3f32263f6450b35!2sHotel%20%C3%91usta%20Pakana!5e0!3m2!1ses-419!2spe!4v1701305751804!5m2!1ses-419!2spe"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d362.85259547525783!2d-77.5301354577974!3d-9.53154103215082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91a90d1a861b4c8f%3A0x26e462c21f063106!2s2do%20piso%20Oficina%20200%2C%20Pje.%20Daniel%20Coral%20Vega%20542%2C%20Huaraz%2002001!5e0!3m2!1ses-419!2spe!4v1701735982688!5m2!1ses-419!2spe"
             width="100%"
-            height="100%"
+            height="90%"
             style={{ border: 0 }}
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"

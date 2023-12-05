@@ -47,7 +47,7 @@ const ArticleList = () => {
   const articles = mockArticles;
 
   return (
-    <div>
+    <div className='bg-black'>
       {/* ... */}
       <main className="max-w-5xl mx-auto p-10 max-w-2xl mx-auto p-12">
         {articles.map(article => (
