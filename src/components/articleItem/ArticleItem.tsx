@@ -2,23 +2,15 @@ import React from 'react';
 import Link from 'next/link';
 import Title from '@/components/UI/atoms/Title/Title';
 import Text from '@/components/UI/atoms/Text/Text';
+import { ArticleData } from '@/interface/ArticleData';
 
-
-interface ArticleProps {
-  id: string;
-  title: string;
-  imageUrl: string;
-  content: string;
-  createdAt: string;
-}
-
-const ArticleItem = ({ id, title, imageUrl, content, createdAt }: ArticleProps) => {
+const ArticleItem = ({ id, title, imageUrl, body, createdAt }: ArticleData) => {
   const maxCharacters = 200;
 
-  // Trunca el contenido si es más largo que el número máximo de caracteres
-  const truncatedContent = content.length > maxCharacters
-    ? content.substring(0, maxCharacters) + "..."
-    : content;
+  // Comprueba si 'body' está definido y no es null
+  const truncatedContent = body && body.length > maxCharacters
+    ? body.substring(0, maxCharacters) + "..."
+    : body || ''; // Usa una cadena vacía si 'body' es undefined
 
   return (
     <div className="flex flex-col md:flex-row border rounded-lg overflow-hidden shadow-lg mb-5 bg-white">

@@ -30,9 +30,9 @@ const Header = () => {
     <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-black nav">
       <div>
         <h1 className="text-5xl font-signature ml-2">
-          <a className="" href="">
+          <Link className="" href="/">
             <Image src="/logo.png" alt="logo" width={100} height={100} />
-          </a>
+          </Link>
         </h1>
       </div>
 
