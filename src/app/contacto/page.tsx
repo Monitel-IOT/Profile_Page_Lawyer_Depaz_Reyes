@@ -32,13 +32,13 @@ function Page() {
             <div className="flex flex-col justify-between gap-8 md:flex-row md:gap-0">
               <div className="pr-[16px]">
                 <Text className="text-[#666]" variant="sm">
-                  Piso 2, oficina 200
+                  Piso 2, Oficina 200
                 </Text>
                 <Text className="text-[#666]" variant="sm">
-                  Pasaje Daniel Coral Vega N 542
+                  Pasaje Daniel Coral Vega N° 542
                 </Text>
                 <Text className="text-[#666]" variant="sm">
-                  Ancash, Huaraz
+                  Huaraz, Ancash
                 </Text>
                 <Text className="text-[#666]" variant="sm">
                   Peru
@@ -47,7 +47,7 @@ function Page() {
                   +51 913 812 243
                 </Text>
                 <Text className="text-[#666]" variant="sm">
-                  johndepazr@gmail.com
+                  jhonhdepazr@gmail.com
                 </Text>
               </div>
               <div className="w-[100%] md:w-[500px] h-[250px]">
