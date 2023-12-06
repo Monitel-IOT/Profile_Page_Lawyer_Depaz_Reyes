@@ -27,11 +27,11 @@ export default function Home() {
           <div className="text-white flex flex-col items-center md:items-start md:flex-1 mt-8 md:mt-0 px-4 md:px-0">
             {' '}
             <p className="font-bold text-lg">ABOGADO</p>
-            <p className="text-lg">R.C.A..A. 3946</p>
-            <p className="text-lg">johndepazr@gmail.com</p>
+            <p className="text-lg">jhonhdepazr@gmail.com</p>
             <p className="text-lg">913 812 243</p>
             <p className="text-lg">Dirección: Pasaje Daniel Coral Vega</p>
-            <p className="text-lg">N° 542 2do piso Oficina 200</p>
+            <p className="text-lg">N° 542 2do Piso Oficina 200</p>
+            <p className="text-lg">Huaraz-Ancash</p>
           </div>
         </div>
 
