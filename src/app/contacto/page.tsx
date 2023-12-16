@@ -1,6 +1,5 @@
-import Title from '@/components/UI/atoms/Title/Title';
-import React from 'react';
 import Text from '@/components/UI/atoms/Text/Text';
+import Title from '@/components/UI/atoms/Title/Title';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -9,7 +8,7 @@ export const metadata: Metadata = {
 
 function Page() {
   return (
-    <article className="flex flex-col md:h-[calc(100vh_-_104px)]">
+    <article className="flex flex-col md:h-100vh">
       <section className="flex justify-center items-center h-[285.5px] bg-black">
         <Title className="text-white font-bold" variant="h2">
           Contactame
@@ -17,7 +16,7 @@ function Page() {
       </section>
       <section className=" bg-hero-contact min-h-[562px]">
         <div className="flex justify-center relative bg-[rgba(0,0,0,0.85)] h-[582px] md:h-[562px]">
-          <div className="shadow-[0px_1px_18px_0px_rgba(0,0,0,0.15)] h-auto  max-w-[1170px] bg-white mx-[30px] absolute top-[-60px] md:top-[-82px] p-[30px] md:p-[70px]">
+          <div className="shadow-[0px_1px_18px_0px_rgba(0,0,0,0.15)] h-auto  max-w-[1170px] bg-white mx-[30px] absolute md:top-[-82px] p-[30px] md:p-[70px]">
             <Title className="mb-[16px] font-bold" variant="h2">
               Póngase en contacto o programe una cita
             </Title>
