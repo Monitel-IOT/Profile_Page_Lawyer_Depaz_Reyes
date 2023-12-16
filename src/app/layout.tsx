@@ -40,7 +40,7 @@ export default function RootLayout({
         <meta name="language" content="es" />
         <meta name="geo.region" content="PE-ANC" />
         <meta name="geo.placename" content="Huaraz" />
-        <link rel="canonical" href="https://depaz-reyes.vercel.app/" />
+        <link rel="canonical" href="https://www.gmdssac.com/" />
         <meta
           property="og:title"
           content="Jhon Henry DePaz Reyes - Abogado en Huaraz, Ancash, Perú | Especialista Legal"
@@ -50,7 +50,7 @@ export default function RootLayout({
           content="Conoce a Jhon Henry DePaz Reyes, abogado especializado en brindar asesoria juridica integral en Huaraz, Ancash, Perú."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://depaz-reyes.vercel.app/" />
+        <meta property="og:url" content="https://www.gmdssac.com/" />
       </Head>
       <body>
         <Header />
