@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 function Page() {
   return (
     <article className="flex flex-col md:h-100vh">
-      <section className="flex justify-center items-center h-[285.5px] bg-black">
+      <section className="flex justify-center items-center h-[50px] md:h-[285.5px] bg-black">
         <Title className="text-white font-bold" variant="h2">
           Contactame
         </Title>
@@ -46,7 +46,7 @@ function Page() {
                   +51 913 812 243
                 </Text>
                 <Text className="text-[#666]" variant="sm">
-                  johndepazr@gmail.com
+                  jhonhdepazr@gmdssac.com
                 </Text>
               </div>
               <div className="w-[100%] md:w-[500px] h-[250px]">

@@ -1,3 +1,4 @@
+import Text from '@/components/UI/atoms/Text/Text';
 import Title from '@/components/UI/atoms/Title/Title';
 import { Metadata } from 'next';
 import Link from 'next/link';
@@ -26,12 +27,12 @@ export default function Home() {
           </div>
           <div className="text-white flex flex-col items-center md:items-start md:flex-1 mt-8 md:mt-0 px-4 md:px-0">
             {' '}
-            <p className="font-bold text-lg">ABOGADO</p>
-            <p className="text-lg">R.C.A..A. 3946</p>
-            <p className="text-lg">johndepazr@gmail.com</p>
-            <p className="text-lg">913 812 243</p>
-            <p className="text-lg">Dirección: Pasaje Daniel Coral Vega</p>
-            <p className="text-lg">N° 542 2do piso Oficina 200</p>
+            <Text className="font-bold text-lg">ABOGADO</Text>
+            <Text className="text-lg">R.C.A..A. 3946</Text>
+            <Text className="text-lg">jhonhdepazr@gmdssac.com</Text>
+            <Text className="text-lg">+51 913 812 243</Text>
+            <Text className="text-lg">Dirección: Pasaje Daniel Coral Vega</Text>
+            <Text className="text-lg">N° 542 2do piso Oficina 200</Text>
           </div>
         </div>
         <div className="w-full mt-5" style={{ height: '350px' }}>
