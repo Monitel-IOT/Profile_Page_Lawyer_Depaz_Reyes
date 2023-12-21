@@ -4,7 +4,8 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Depaz Reyes | Home',
+  title:
+    'Jhon Henry Depaz Reyes | Abogados en Huaraz | Estudio de abogados en Huaraz',
 };
 
 export default function Home() {
