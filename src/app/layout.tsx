@@ -8,7 +8,7 @@ import './globals.css';
 export const metadata: Metadata = {
   title: 'Depaz Reyes ',
   description:
-    'Jhon Henry DePaz Reyes, abogado en Huaraz, Ancash, Perú. Especializado en brindar asesoria juridica integral. Conoce nuestros servicios legales y experiencia en la región.',
+    'Jhon Henry Depaz Reyes, abogados Huaraz, Ancash, Perú. Especializado en brindar asesoria juridica integral. Conoce nuestros servicios legales y experiencia en la región.',
 };
 
 export default function RootLayout({
@@ -25,7 +25,7 @@ export default function RootLayout({
         </title>
         <meta
           name="description"
-          content="Jhon Henry DePaz Reyes, abogado en Huaraz, Ancash, Perú. Especializado en brindar asesoria juridica integral. Conoce nuestros servicios legales y experiencia en la región."
+          content="Jhon Henry Depaz Reyes, abogado en Huaraz, Ancash, Perú. Especializado en brindar asesoria juridica integral. Conoce nuestros servicios legales y experiencia en la región."
         />
 
         <meta name="google" content="nositelinkssearchbox" key="sitelinks" />
@@ -43,11 +43,11 @@ export default function RootLayout({
         <link rel="canonical" href="https://www.gmdssac.com/" />
         <meta
           property="og:title"
-          content="Jhon Henry DePaz Reyes - Abogado en Huaraz, Ancash, Perú | Especialista Legal"
+          content="Jhon Henry Depaz Reyes - Abogados Huaraz, Ancash, Perú | Especialista Legal"
         />
         <meta
           property="og:description"
-          content="Conoce a Jhon Henry DePaz Reyes, abogado especializado en brindar asesoria juridica integral en Huaraz, Ancash, Perú."
+          content="Conoce a Jhon Henry Depaz Reyes, abogado especializado en brindar asesoria juridica integral en Huaraz, Ancash, Perú."
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.gmdssac.com/" />
