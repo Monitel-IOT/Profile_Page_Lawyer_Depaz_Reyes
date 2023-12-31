@@ -3,7 +3,7 @@ import Title from '@/components/UI/atoms/Title/Title';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Depaz Reyes | Contacto',
+  title: 'Jhon Henry Depaz Reyes | Contacto | Teléfono | Dirección',
 };
 
 function Page() {

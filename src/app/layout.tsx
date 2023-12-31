@@ -6,7 +6,7 @@ import Head from 'next/head';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Depaz Reyes ',
+  title: 'Jhon Henry Depaz Reyes',
   description:
     'Jhon Henry Depaz Reyes, abogados Huaraz, Ancash, Perú. Especializado en brindar asesoria juridica integral. Conoce nuestros servicios legales y experiencia en la región.',
 };
