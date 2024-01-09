@@ -43,7 +43,7 @@ export default function RootLayout({
         <link rel="canonical" href="https://www.gmdssac.com/" />
         <meta
           property="og:title"
-          content="Jhon Henry Depaz Reyes - Abogados Huaraz, Ancash, Perú | Especialista Legal"
+          content="Jhon Henry Depaz Reyes | Abogados Huaraz"
         />
         <meta
           property="og:description"
@@ -51,6 +51,10 @@ export default function RootLayout({
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.gmdssac.com/" />
+        <meta
+          property="og:site_name"
+          content="Jhon Henry Depaz Reyes | Abogados Huaraz"
+        />
       </Head>
       <body>
         <Header />
